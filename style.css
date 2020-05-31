@@ -39,17 +39,36 @@ h4 {
   font-style: italic;
 }
 
+header.header,
+footer.site-footer {
+  display: none;
+}
+
 #home-intro h4 {
   display: inline;
   font-style: normal;
 }
 
+#cat-list ul li a,
 #footer-credit a {
   color: #CCC;
 }
 
+#cat-list h5,
+#cat-list ul li a:hover,
 #footer-credit a:hover {
   color: #FFF;
+}
+
+#cat-list h5 {
+  border-bottom: 3px solid #242424;
+  margin-bottom: 5px;
+  max-width: fit-content;
+  text-transform: uppercase;
+}
+
+#footer-credit p {
+  margin-bottom: 0;
 }
 
 .gallery-class .elementor-widget-container figure {
