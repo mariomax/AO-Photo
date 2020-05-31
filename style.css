@@ -19,13 +19,17 @@ body * {
 }
 
 h1,
+h1 a,
 h2,
 h2 a,
 h3,
+h3 a,
 h4,
 h5,
 h6,
-span.elementor-button-text {
+nav ul li a,
+span.elementor-button-text,
+a.elementor-post__read-more {
   font-family: 'Averia Serif Libre', cursive;
   font-weight: 400;
   font-style: normal;
@@ -33,6 +37,27 @@ span.elementor-button-text {
 
 h4 {
   font-style: italic;
+}
+
+#home-intro h4 {
+  display: inline;
+  font-style: normal;
+}
+
+#footer-credit a {
+  color: #CCC;
+}
+
+#footer-credit a:hover {
+  color: #FFF;
+}
+
+.gallery-class .elementor-widget-container figure {
+  margin: 0 auto !important;
+}
+
+.gallery-class .elementor-widget-container img {
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -60,6 +85,13 @@ h4 {
 
 @media screen and (min-width: 768px) {
 
+  /* .elementor-nav-menu__align-center .elementor-nav-menu--layout-vertical>ul>li>a */
+
+  #side-nav nav ul li a {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+
   #left-side {
     position: fixed;
     height: 100vh;
@@ -70,9 +102,9 @@ h4 {
     flex: auto;
   }
 
-  #side-social {
-    flex-basis: 10%;
-  }
+  /* #side-social {
+    flex-basis: 7%;
+  } */
 
   #left-side .elementor-widget-wrap {
     -webkit-box-orient: vertical;
@@ -80,8 +112,8 @@ h4 {
     flex-direction: column;
   }
 
-  a #right-side {
-    left: 30%;
+  #right-side {
+    left: 25%;
   }
 }
 
@@ -96,9 +128,13 @@ h4 {
     width: 75%;
   }
 
-  #home-gallery {
-    max-width: 1024px;
-    margin: 0 auto;
+  .gallery-class .elementor-widget-container img {
+    padding-bottom: 4rem;
+  }
+
+  #home-hero img,
+  #home-gallery img {
+    padding-bottom: 2rem;
   }
 }
 
@@ -111,5 +147,16 @@ h4 {
   #right-side {
     left: 20%;
     width: 80%;
+  }
+
+  #home-gallery,
+  #gallery-grid {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .gallery-class .elementor-widget-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
