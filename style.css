@@ -67,6 +67,10 @@ footer.site-footer {
   text-transform: uppercase;
 }
 
+#cat-list ul li.cat-item-1 {
+  display: none;
+}
+
 #footer-credit p {
   margin-bottom: 0;
 }
