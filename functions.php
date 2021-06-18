@@ -1,4 +1,3 @@
-
 <?php
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -13,4 +12,3 @@ if ( ! function_exists( 'neve_child_load_css' ) ):
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'neve_child_load_css', 20 );
-

@@ -1,15 +1,10 @@
 /*
-Theme Name:     Neve Child
-Theme URI:      https://themeisle.com/themes/neve/
-Template: neve
-Author:         ThemeIsle
-Author URI:     https://themeisle.com
-Description:    Neve is a super fast, easily customizable, multi-purpose theme. It’s perfect for blogs, small business, startups, agencies, firms, e-commerce shops (WooCommerce storefront) as well as personal portfolio sites and most types of projects. A fully AMP optimized and responsive theme, Neve will load in mere seconds and adapt perfectly on any viewing device. While it is lightweight and has a minimalist design, the theme is highly extendable, it has a highly SEO optimized code, resulting in top rankings in Google search results. Neve works perfectly with Gutenberg and the most popular page builders (Elementor, Brizy, Beaver Builder, Visual Composer, SiteOrigin, Divi). Neve is also WooCommerce ready, responsive, RTL & translation ready. Look no further. Neve is the perfect theme for you!
-Version:        1.0.0
-License:        GNU General Public License v2 or later
-License URI:    http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:    neve
-Tags: blog, custom-logo, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles
+theme name: neve child
+author: childthemewp.com
+author uri: https://childthemewp.com/neve/
+description: neve wordpress child theme.
+template: neve
+text domain: neve-child
 */
 
 body * {
@@ -33,6 +28,14 @@ a.elementor-post__read-more {
   font-family: 'Averia Serif Libre', cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+h3 a {
+  color: #5C372D;
+}
+
+h3 a:hover {
+  color: #14171c;
 }
 
 h4 {
@@ -63,6 +66,8 @@ footer.site-footer {
 #cat-list h5 {
   border-bottom: 3px solid #242424;
   margin-bottom: 5px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   text-transform: uppercase;
 }
@@ -104,6 +109,10 @@ footer.site-footer {
   .elementor-nav-menu>li:last-child {
     margin-bottom: 10px;
   }
+
+  .alignwide {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -115,8 +124,8 @@ footer.site-footer {
     justify-content: flex-start;
   }
 
-  #left-side {
-    position: fixed;
+  .elementor-row #left-side {
+    position: fixed !important;
     height: 100vh;
   }
 
